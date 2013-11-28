@@ -16,6 +16,7 @@ MyPainter::MyPainter()
 void MyPainter::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
+    painter.setRenderHint(QPainter::Antialiasing);//开启抗锯齿
     QPen pen;//创建一个画笔
     pen.setColor(Qt::darkCyan);
     pen.setWidth(5);
